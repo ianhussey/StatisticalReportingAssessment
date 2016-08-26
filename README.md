@@ -15,11 +15,11 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 ## Description & purpose
 Even if your data and code are publicly available, you can still fall at the last hurdle by not reporting the correct numbers in a manuscript. This script assesses whether the analyses reported in a manuscript have been reported correctly and are APA compliant using the [`statcheck`](http://rpubs.com/michelenuijten/202816) library.
 
-Specifically:
+Statcheck does the following:
 
-1. extracts all the analyses reported in your manuscript
-2. takes the test statistics and df and recomputes p values
-3. compares the recomputed p value with the p value reported in the manuscript to check for reporting errors, and also for APA compliance.
+1. Extracts all the analyses (t, r, F, Chi2, and Z values) reported in APA format in your manuscript
+2. Takes the test statistics and df and recomputes p values
+3. Compares the recomputed p value with the p value reported in the manuscript to check for reporting errors, and also for APA compliance.
 
 Also useful when reviewing others' manuscripts! 
 
@@ -27,5 +27,8 @@ Also useful when reviewing others' manuscripts!
 Receives `.txt` files as input. You can export your `.docx` to `.txt` inside Word.
 
 NB On Word for Mac, you must choose Other Encoding>"Unicode 7.0 UTF 8.0" so that linebreaks and greek letters are saved correctly.
+
+## Output
+Full and summarised output of statcheck are saved to a `.txt` file. Reported versus computed p values are also plotted in an annotated scatter plot.
 
 
